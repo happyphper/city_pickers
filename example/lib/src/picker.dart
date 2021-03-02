@@ -37,7 +37,6 @@ class _PickerState extends State<Picker> {
 
   @override
   void initState() {
-    // TODO: implement initState
     result = widget.items[0];
     super.initState();
   }

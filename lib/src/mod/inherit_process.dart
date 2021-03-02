@@ -22,7 +22,6 @@ class InheritRouteWidget extends InheritedWidget {
 
   @override
   bool updateShouldNotify(InheritRouteWidget oldWidget) {
-    // TODO: implement updateShouldNotify
     return oldWidget.router != router;
   }
 }

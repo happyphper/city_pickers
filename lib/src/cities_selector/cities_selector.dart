@@ -131,7 +131,6 @@ class _CitiesSelectorState extends State<CitiesSelector> {
 
   @override
   void initState() {
-    // TODO: implement initState
     print("hotCities::::: ${widget.hotCities}");
     _cities = CitiesUtils.getAllCitiesByMeta(
         widget.provincesData ?? provincesData, widget.citiesData ?? citiesData);
