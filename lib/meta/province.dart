@@ -3069,7 +3069,9 @@ const Map<String, dynamic> citiesData = {
     "510182": {"name": "彭州市", "alpha": "p"},
     "510183": {"name": "邛崃市", "alpha": "q"},
     "510184": {"name": "崇州市", "alpha": "c"},
-    "510185": {"name": "简阳市", "alpha": "j"}
+    "510185": {"name": "简阳市", "alpha": "j"},
+    "510191": {"name": "天府新区", "alpha": "t"},
+    "510192": {"name": "高新区", "alpha": "g"}
   },
   "510300": {
     "510302": {"name": "自流井区", "alpha": "z"},
