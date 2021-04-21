@@ -86,7 +86,7 @@ class WorkInProgressState extends State<WorkInProgress> {
               userSelfMeta = !userSelfMeta;
             });
           },
-    ));
+        ));
   }
 
   Widget _buildTopIndexHeight() {
@@ -169,13 +169,13 @@ class WorkInProgressState extends State<WorkInProgress> {
         context: context,
         title: title,
         locationCode: '110100',
-        provincesData: !userSelfMeta ? CityPickers.metaProvinces : provincesData,
+        provincesData:
+            !userSelfMeta ? CityPickers.metaProvinces : provincesData,
         citiesData: !userSelfMeta ? CityPickers.metaCities : citiesData,
         hotCities: [
           HotCity(id: 0, name: '北京'),
           HotCity(id: 1, name: '沈阳'),
           HotCity(id: 2, name: '天津'),
-
         ],
         sideBarStyle: BaseStyle(
             fontSize: tagBarFontSize,
@@ -355,7 +355,7 @@ class WorkInProgressState extends State<WorkInProgress> {
             ),
             AttrItemContainer(
                 title: '选择结果', editor: Text("${result.toString()}")),
-            RaisedButton(
+            ElevatedButton(
               child: Text('呼出'),
               onPressed: () {
                 toggle(context);

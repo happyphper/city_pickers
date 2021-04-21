@@ -75,30 +75,29 @@ class _ColorPickersState extends State<ColorPickers> {
         child: GestureDetector(
           onTap: () async {
             Color color = await showDialog(
-              context: context,
-              builder: (context) {
-                return AlertDialog(
-                  title: const Text('Pick a color!'),
-                  content: SingleChildScrollView(
-                    child: ColorPicker(
-                      pickerColor: pickerColor,
-                      onColorChanged: onChangeColor,
-                      enableLabel: true,
-                      pickerAreaHeightPercent: 0.8,
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    title: const Text('Pick a color!'),
+                    content: SingleChildScrollView(
+                      child: ColorPicker(
+                        pickerColor: pickerColor,
+                        onColorChanged: onChangeColor,
+                        enableLabel: true,
+                        pickerAreaHeightPercent: 0.8,
+                      ),
                     ),
-                  ),
-                  actions: <Widget>[
-                    FlatButton(
-                      child: const Text('Got it'),
-                      onPressed: () {
-                        setState(() => currentColor = pickerColor);
-                        Navigator.of(context).pop(currentColor);
-                      },
-                    ),
-                  ],
-                );
-              }
-            );
+                    actions: <Widget>[
+                      TextButton(
+                        child: const Text('Got it'),
+                        onPressed: () {
+                          setState(() => currentColor = pickerColor);
+                          Navigator.of(context).pop(currentColor);
+                        },
+                      ),
+                    ],
+                  );
+                });
             widget.onConfirm(color);
           },
           child: widget.target,

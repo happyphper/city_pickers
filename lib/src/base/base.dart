@@ -349,7 +349,7 @@ class _BaseView extends State<BaseView> {
           children: <Widget>[
             new Row(
               children: <Widget>[
-                FlatButton(
+                TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -361,7 +361,7 @@ class _BaseView extends State<BaseView> {
                         ),
                       ),
                 ),
-                FlatButton(
+                TextButton(
                   onPressed: () {
                     Navigator.pop(context, _buildResult());
                   },
